@@ -41,7 +41,7 @@ L’application propose :
 
 ## 📁 Structure du projet
 ```text
-Langchain_RAGbot_fr/
+Langchain_RAGbot/App_fr
 │
 ├── app.py                   # Application Streamlit principale
 ├── utils.py                 # Fonctions utilitaires (création de l’uploader de documents,
@@ -72,8 +72,8 @@ L’application ne fonctionnera pas correctement si ces composants ne sont pas i
 
 ### 📥 Cloner le dépôt
 ```bash
-git clone https://github.com/gitsujay25/Langchain_RAGbot_fr.git
-cd Langchain_RAGbot_fr
+git clone https://github.com/gitsujay25/Langchain_RAGbot.git
+cd Langchain_RAGbot/App_fr
 conda create -n langchain_rag python=3.10
 conda activate langchain_rag
 pip install -r requirements.txt

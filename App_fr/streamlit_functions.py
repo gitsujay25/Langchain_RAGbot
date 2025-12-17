@@ -6,8 +6,8 @@
 
 import streamlit as st
 import utils as ult
-import time
 import os
+# import time
 #------------------------------ Mapping of parameters ----------------------
 role_map = {
     "human": "user",
@@ -126,7 +126,7 @@ def stream_ai_message(user_input,conversational_rag_chain):
             full_response_text = "" # initialize the response as blank
             response_placeholder = st.empty() # Create a placeholder in the UI for the dynamic output
 
-            start = time.time()
+            #start = time.time()
             #  Iterate through the stream
             for chunk in conversational_rag_chain.stream({
                 "input": user_input,
@@ -139,9 +139,9 @@ def stream_ai_message(user_input,conversational_rag_chain):
                 full_response_text += ai_response_chunk
                 # Update the UI instantly with the accumulated text
                 response_placeholder.markdown(full_response_text)
-            end_time = time.time()
-            total_duration = end_time - start
-            st.write(f"Total time taken: {total_duration:.2f} seconds")
+            # end_time = time.time()
+            # total_duration = end_time - start
+            # st.write(f"Total time taken: {total_duration:.2f} seconds")
 
             return full_response_text
 #------------------------------ show_context ----------------------

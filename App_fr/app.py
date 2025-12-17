@@ -69,8 +69,8 @@ else:
                 st.success("RAGbot prêt à l'emploi!")
         else:
             st.info("RAGbot est en action. Appuyez sur «Recréer le RAGbot» pour le relancer")
-st.write(st.session_state.model)
-st.write(st.session_state.embedding)
+# st.write(st.session_state.model)
+# st.write(st.session_state.embedding)
 conversational_rag_chain = st.session_state.rag
 doc_retriever = st.session_state.ret
 #----------------------------------------- Display existing messages ---------------------------------------------------
